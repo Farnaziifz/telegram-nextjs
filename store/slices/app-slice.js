@@ -5,6 +5,7 @@ const appSlice = createSlice({
   initialState: {
     isSidebarCollapsed: false,
     isProfileVisible: false,
+    isContactOpen: false,
   },
   reducers: {
     isSidebarCollapsed: (state, payload) => {
@@ -13,6 +14,10 @@ const appSlice = createSlice({
     isProfileVisible: (state, payload) => {
       console.log("salam", payload);
       state.isProfileVisible = payload.payload;
+    },
+
+    isContactOpen: (state, payload) => {
+      state.isContactOpen = payload.payload;
     },
   },
 });

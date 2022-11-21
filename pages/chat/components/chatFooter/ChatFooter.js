@@ -1,4 +1,4 @@
-import CustomInput from "../../../../components/customInput/CustomInput";
+import CustomInput from "../../../../components/shared/customInput/CustomInput";
 import React from "react";
 import styles from "./ChatFooter.module.scss";
 

@@ -1,0 +1,34 @@
+@import "../../../../styles/variable";
+
+.header {
+  background-color: $darkGray;
+  color: $whiteColor;
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+  align-items: center;
+  padding: 0 20px;
+
+  .profileImage {
+    height: 45px;
+    border-radius: 50px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: flex-start;
+
+    .userLabel {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+    .timeLabel {
+      font-size: 12px;
+      margin-bottom: 3px;
+      color: $lightGray;
+    }
+  }
+}

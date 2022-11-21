@@ -1,0 +1,29 @@
+@import "../../../../styles/variable";
+
+.content {
+  color: $whiteColor;
+  border-radius: 10px;
+  padding: 2px 5px;
+  margin: 5px;
+  width: 100%;
+  display: flex;
+
+  &.mine {
+    width: 250px;
+    background-color: $blueColor;
+  }
+
+  &.notMine {
+    width: 250px;
+    background-color: $primaryColor;
+  }
+
+  .content {
+    flex-direction: column;
+    font-size: 16px;
+    .date {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  }
+}

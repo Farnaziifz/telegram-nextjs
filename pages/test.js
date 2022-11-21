@@ -3,7 +3,7 @@ import Layout from "../layouts/layout.js";
 const Test = () => {
   return (
     <>
-      <h1>test</h1>
+      <h1>test page</h1>
     </>
   );
 };

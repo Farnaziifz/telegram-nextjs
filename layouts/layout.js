@@ -1,10 +1,12 @@
 import Sidebar from "./components/sidebar/sidebar";
+import styles from "./layout.module.scss";
 function getLayout(page) {
   return (
     <>
-      <Sidebar />
-      <h1>this is a layout</h1>
-      <div>{page}</div>
+      <div className={styles.container}>
+        <Sidebar />
+        <div className={styles.chatContainer}>{page}</div>
+      </div>
     </>
   );
 }

@@ -2,23 +2,21 @@ import React from "react";
 import Button from "../../../assets/images/hamburger-icon.svg";
 import Back from "../../../assets/images/back-arrow.svg";
 import styles from "./MenuButton.module.scss";
-// import { useDispatch, useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
 function MenuButton() {
-  // const dispatch = useDispatch();
-  // const isProfileVisible = useSelector((state) => {
-  //   return state.app.isProfileVisible;
-  // });
+  const dispatch = useDispatch();
+  const isProfileVisible = useSelector((state) => {
+    return state.appSlice.isProfileVisible;
+  });
 
-  // function profileVisibility() {
-  //   dispatch({ type: "app/isProfileVisible", payload: !isProfileVisible });
-  // }
+  function profileVisibility() {
+    dispatch({ type: "appSlice/isProfileVisible", payload: !isProfileVisible });
+    console.log(isProfileVisible);
+  }
 
   return (
-    // onClick={profileVisibility}
-    <div className={styles.container}>
-      {/* <img src={isProfileVisible ? Back : Button} alt="MenuIcon" /> */}
-      <img src={Button.src} />
+    <div className={styles.container} onClick={profileVisibility}>
+      <img src={isProfileVisible ? Back.src : Button.src} alt="MenuIcon" />
     </div>
   );
 }

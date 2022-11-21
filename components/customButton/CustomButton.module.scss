@@ -1,0 +1,18 @@
+@import '../../styles/variable.scss';
+
+.button {
+  height: 30px;
+  background-color: $blueColor;
+  color: $whiteColor;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 52px;
+  transition: 0.4s;
+  margin: 10px 0;
+
+  &:hover {
+    background-color: darken($color: $blueColor, $amount: 20);
+  }
+}

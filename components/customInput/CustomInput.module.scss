@@ -1,0 +1,35 @@
+@import "../../styles/variable.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 10px;
+
+  label {
+    display: flex;
+    align-items: flex-end;
+    color: $whiteColor;
+    font-size: 14px;
+    margin: 5px 0px 5px 5px;
+  }
+
+  .input {
+    background-color: $darkGray;
+    color: $whiteColor;
+    border: 1px solid $darkGray;
+    border-radius: 5px;
+    height: 30px;
+    padding: 10px;
+    font-size: 14px;
+    transition: 0.5s;
+
+    &:hover {
+      border: 1px solid $lightGray;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

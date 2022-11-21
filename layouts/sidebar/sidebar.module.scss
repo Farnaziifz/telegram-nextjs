@@ -1,0 +1,13 @@
+@import "../../styles//variable.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #212121;
+  color: white;
+  height: 100vh;
+  width: 420px * $pixelRatio;
+  transition: width 0.3s;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

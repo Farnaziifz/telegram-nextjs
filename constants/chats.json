@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "profileImage": null,
+    "userName": "Jack",
+    "chats": [
+      {
+        "id": 1,
+        "type": 1,
+        "content": "Hi",
+        "date": 1656094600795
+      },
+      {
+        "id": 1,
+        "type": 2,
+        "content": "Hello there",
+        "date": 1656094600795
+      },
+      {
+        "id": 1,
+        "type": 1,
+        "content": "How you doin?",
+        "date": 1656094600795
+      },
+      {
+        "id": 1,
+        "type": 2,
+        "content": "nothing...",
+        "date": 1656094600795
+      },
+      {
+        "id": 1,
+        "type": 1,
+        "content": "Bye",
+        "date": 1656094600795
+      },
+      {
+        "id": 1,
+        "type": 2,
+        "content": "Goodbye.",
+        "date": 1656094600795
+      }
+    ],
+    "previewText": "Check this url: https://shab.ir/"
+  },
+  {
+    "id": 2,
+    "profileImage": null,
+    "userName": "John",
+    "chats": [],
+    "previewText": "Do you have time for lunch?"
+  },
+  {
+    "id": 3,
+    "profileImage": null,
+    "userName": "MH",
+    "chats": [],
+    "previewText": "Hi, How you doing?"
+  },
+  {
+    "id": 4,
+    "profileImage": null,
+    "userName": "Michel",
+    "chats": [],
+    "previewText": "I am so sorry for being late"
+  },
+  {
+    "id": 5,
+    "profileImage": null,
+    "userName": "Matt",
+    "chats": [],
+    "previewText": "Today is a good day."
+  },
+  {
+    "id": 6,
+    "profileImage": null,
+    "userName": "Elaija",
+    "chats": [],
+    "previewText": "Check this."
+  }
+]

@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: rgb(43, 42, 42);
+  }
+
+  .profileImage {
+    height: 55px;
+    border-radius: 50px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: flex-start;
+
+    .userName {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 3px;
+    }
+
+    .previewText {
+      color: rgb(144, 142, 142);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.search {
+  height: 25px;
+  color: white;
+  padding: 5px 5px 5px 35px;
+  background-color: #181818;
+  border-radius: 20px;
+  margin-left: 20px;
+  border: 2px solid #181818;
+  flex: 1;
+  font-size: 16px;
+  transition: 0.5s;
+
+  &:hover {
+    border: 2px solid #989797;
+  }
+
+  &:focus {
+    border: 2px solid #8774e1;
+    outline: none;
+  }
+}
+
+.searchIcon {
+  height: 20px;
+  z-index: 99;
+  position: absolute;
+  margin-left: 52px;
+}

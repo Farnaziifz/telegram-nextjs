@@ -1,8 +1,8 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ProfilePicture from "./profilePicture/ProfilePicture";
-import CustomButton from "../../../components/customButton/CustomButton";
-import CustomInput from "../../../components/customInput/CustomInput";
+import CustomButton from "../../../components/shared/customButton/CustomButton";
+import CustomInput from "../../../components/shared/customInput/CustomInput";
 import styles from "./ProfileView.module.scss";
 
 function ProfileView() {
@@ -26,8 +26,9 @@ function ProfileView() {
 
   function handleInput(event) {
     const { name, value } = event.target;
+    console.log(name, value);
     dispatch({
-      type: "user/profile",
+      type: "userSlice/profile",
       payload: { ...profile, [name]: value },
     });
   }
@@ -38,20 +39,20 @@ function ProfileView() {
         <CustomInput
           title="Name"
           placeholder="Enter Name"
-          value={profile.name}
+          value={profile.Name}
           name="Name"
           onChange={handleInput}
         />
         <CustomInput
           title="Last Name"
-          value={profile.lastName}
+          value={profile.LastName}
           placeholder="Enter Last Name"
           name="LastName"
           onChange={handleInput}
         />
         <CustomInput
           title="Bio"
-          value={profile.bio}
+          value={profile.Bio}
           placeholder="Enter Bio"
           name="Bio"
           onChange={handleInput}

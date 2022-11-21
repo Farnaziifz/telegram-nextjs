@@ -53,8 +53,21 @@
   {
     "id": 3,
     "profileImage": null,
-    "userName": "MH",
-    "chats": [],
+    "userName": "Farnazii",
+    "chats": [
+      {
+        "id": 1,
+        "type": 1,
+        "content": "Hi",
+        "date": 1656094600795
+      },
+      {
+        "id": 1,
+        "type": 2,
+        "content": "Hello there",
+        "date": 1656094600795
+      }
+    ],
     "previewText": "Hi, How you doing?"
   },
   {
@@ -78,4 +91,5 @@
     "chats": [],
     "previewText": "Check this."
   }
+  
 ]

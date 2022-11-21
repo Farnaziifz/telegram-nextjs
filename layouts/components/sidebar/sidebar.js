@@ -4,9 +4,11 @@ import SidebarContent from "../sidebarContent/SidebarContent";
 import chats from "../../../constants/chats.json";
 import { useDispatch, useSelector } from "react-redux";
 import ProfileView from "../profile/ProfileView";
+import { useRouter } from "next/router";
 
 function Sidebar() {
   const dispatch = useDispatch();
+  const router = useRouter();
   const isProfileVisible = useSelector((state) => {
     return state.appSlice.isProfileVisible;
   });
@@ -17,6 +19,7 @@ function Sidebar() {
     chats.map((item) => {
       if (item.id === id) {
         dispatch({ type: "chatSlice/selectedChat", payload: item });
+        router.push("/chat");
       }
     });
   }

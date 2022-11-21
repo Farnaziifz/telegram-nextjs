@@ -15,9 +15,11 @@ function MenuButton() {
   }
 
   return (
-    <div className={styles.container} onClick={profileVisibility}>
-      <img src={isProfileVisible ? Back.src : Button.src} alt="MenuIcon" />
-    </div>
+    <>
+      <div className={styles.container} onClick={profileVisibility}>
+        <img src={isProfileVisible ? Back.src : Button.src} alt="MenuIcon" />
+      </div>
+    </>
   );
 }
 
